@@ -1,8 +1,8 @@
 public class Lesson2 {
     public static void main(String[] args) {
         System.out.println(sum(5,10));
-        posetiveOrNegative(2);
-        System.out.println(plasOrMinus(2));
+        positiveOrNegative(2);
+        System.out.println(plusOrMinus(2));
         printWord("Java",5);
 
 
@@ -11,15 +11,12 @@ public class Lesson2 {
         return a+b>=10 && a+b<=20;
 
     }
-    static void posetiveOrNegative(int a){
-        if (a<0){
-            System.out.println("negative");;
+    static void positiveOrNegative(int a){
+        System.out.println(a>0?"positive":"negative");
+
         }
-        else {
-            System.out.println("positive");
-        }
-    }
-    static boolean plasOrMinus(int a){
+
+    static boolean plusOrMinus(int a){
         return a<0;
     }
     static void printWord(String word,int x){
