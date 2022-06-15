@@ -27,7 +27,7 @@ public class Lesson1 {
         int valeu = scanner.nextInt();
         if (valeu <= 0) {
             System.out.println("Red");
-        } else if (valeu >= 100) {
+        } else if (valeu <= 100) {
 
             System.out.println("Yellow");
         } else {
@@ -49,9 +49,12 @@ public class Lesson1 {
 
     public static void main(String[] args) {
         checkSumSign();
-        printThreeWords();
         printColor();
         compareNumbers();
+        printThreeWords();
+
+
+
     }
 }
 
